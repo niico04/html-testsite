@@ -1,0 +1,64 @@
+body{
+  display: flex; /* comportamento di un elem. figlio all' interno di un contenitore */
+  flex-direction: column; /* Impila gli elementi verticalmente */
+  align-items: center;    /* Centra orizzontalmente */
+  justify-content: center;
+}
+
+/* Se accedessi tramite ID -> # *
+/*
+#main{
+  margin-top: 100px;
+  width: 200px;
+  height: 50px;
+  background-color: yellow;
+}
+*/
+
+/* Se accedi tramite classList (consigliato) -> . */
+.div-style{
+  /* border: [spessore] [stile] [colore]; */
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, red, blue) 1;
+  /* alternative:
+    -> border: 3px solid blue;   ==> Bordo di 3px, colore blu
+    -> order: 2px dashed red;    ==> Tratteggiato rosso 
+    -> border: 2px dotted green; ==> Puntinato verde 
+    -> border-radius: 10px;      ==> Smussa gli angoli di 10px 
+  */
+  margin-top: 100px;
+  width: 200px;
+  height: 50px;
+  font-size: 5vh; /* Il font sarà proporzionale all'altezza della finestra */
+  background-color: rgb(255, 0, 0);  /* Sfondo */
+  color: rgb(0, 255, 0);             /* testo */
+  
+  /* Centrare il testo */
+  display: flex;           /* Abilita Flexbox */
+  justify-content: center; /* Allinea il testo orizzontalmente */
+  align-items: center;     /* Allinea il testo verticalmente */
+}
+
+/* Contenitore per pulsante e color picker */
+#controls {
+  display: flex;
+  align-items: center; /* Allinea verticalmente */
+  gap: 10px;           /* Spazio tra gli elementi */
+  margin-top: 30px;
+}
+
+.button-style{
+  width: 100px;
+  height: 50px;
+  border: 2px solid rgb(0, 255, 0); 
+  border-radius: 10px; 
+  background-color: red;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  font-size: 5vh; /* Il font sarà proporzionale all'altezza della finestra */
+}
+
+#colIte{
+  width: 90px;
+  height: 50px;
+}
